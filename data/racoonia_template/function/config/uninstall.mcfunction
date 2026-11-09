@@ -7,7 +7,7 @@ scoreboard objectives remove racoonia_template.about
 scoreboard objectives remove racoonia_template.config
 
 # Remove New Player Joined Flag
-scoreboard objectives remove brainage_template.new_player_joined
+scoreboard objectives remove racoonia_template.new_player_joined
 
 # Remove Install Flag
 scoreboard objectives remove racoonia_template.installed
