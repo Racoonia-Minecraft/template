@@ -19,7 +19,7 @@ base=$(dirname "$(readlink -f "$0")")
 echo "Updating $base"
 
 owner="$1"
-if [owner = "Racoonia-Minecraft"]; then
+if [ "$owner" = "Racoonia-Minecraft" ]; then
     owner="Racoonia"
 fi
 datapack_name="$owner's $(insert_spaces "$2")"
@@ -39,7 +39,7 @@ echo "Setting datapack id to $datapack_id"
 
   # refactor pack.mcmeta
   sed -i \
-      -e "s/Racoonia Template Datapack/$datapack_name Datapack/g" "$base/pack.mcmeta"
+      -e "s/Racoonia Template Datapack/$datapack_name datapack/g" "$base/pack.mcmeta"
 
   # lastly, refactor data directory
   mv "$base"/data/racoonia_template "$base"/data/"$datapack_id"
