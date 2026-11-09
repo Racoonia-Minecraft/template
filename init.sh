@@ -43,7 +43,10 @@ echo "Setting datapack id to $datapack_id"
 
     # refractor datapack advancement
     sed -i \
-        -e "s/Racoonia Template Datapack/$datapack_name datapack/g" "$base/data/global/advancement/template.json"
+        -e "s/Racoonia Template Datapack/$datapack_name datapack/g" "$base/data/global/advancement/racoonia_template.json"
+
+    # rename datapack advancement
+    mv "$base"/data/global/advancement/racoonia_template.json "$base"/data/global/advancement/"$datapack_id".json
 
     # lastly, refactor data directory
     mv "$base"/data/racoonia_template "$base"/data/"$datapack_id"
