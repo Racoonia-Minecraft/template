@@ -3,7 +3,7 @@
 		"title": "Racoonia Template",
 		"description": "Racoonia Template Datapack",
 		"icon": {
-			"id": "compass"
+			"id": "minecraft:paper"
 		},
 		"announce_to_chat": false,
 		"show_toast": false
