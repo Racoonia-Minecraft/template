@@ -1,6 +1,6 @@
 tellraw @a [{"text":"Racoonia Template ","color": "green"},{"text": "installed.","color": "green"}]
 
-function racoonia_template:sounds/click
+function _racoonia_template:sounds/click
 
 # Add Triggers
 scoreboard objectives add racoonia_template.about trigger {"text": "About","color": "green"}

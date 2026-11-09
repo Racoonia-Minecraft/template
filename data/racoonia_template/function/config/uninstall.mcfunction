@@ -1,6 +1,6 @@
 tellraw @a [{"text":"Racoonia Template ","color": "green"},{"text": "uninstalled.","color": "red"}]
 
-function racoonia_template:sounds/click
+function _racoonia_template:sounds/click
 
 # Remove Triggers
 scoreboard objectives remove racoonia_template.about

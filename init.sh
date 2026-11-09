@@ -47,6 +47,7 @@ echo "Setting datapack id to $datapack_id"
 
     # lastly, refactor data directory
     mv "$base"/data/racoonia_template "$base"/data/"$datapack_id"
+    mv "$base"/data/_racoonia_template "$base"/data/_"$datapack_id"
 
     rm -rf "$base"/.github
     rm "$(readlink -f "$0")"

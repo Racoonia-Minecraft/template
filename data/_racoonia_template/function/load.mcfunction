@@ -5,5 +5,5 @@ scoreboard objectives add racoonia_template.installed dummy
 execute unless score #racoonia_template racoonia_template.installed matches 1 run function racoonia_template:config/install
 
 # Reload 1 Second Loop
-schedule clear racoonia_template:loops/1_second
-function racoonia_template:loops/1_second
+schedule clear _racoonia_template:loops/1_second
+function _racoonia_template:loops/1_second
