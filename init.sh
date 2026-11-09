@@ -19,6 +19,9 @@ base=$(dirname "$(readlink -f "$0")")
 echo "Updating $base"
 
 owner="$1"
+if [owner = "Racoonia-Minecraft"]; then
+    owner="Racoonia"
+fi
 datapack_name="$owner's $(insert_spaces "$2")"
 datapack_id="${owner,,}_$(to_snake "$2")"
 echo "Setting owner to $owner"
