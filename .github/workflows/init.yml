@@ -9,7 +9,7 @@ jobs:
     cleanup:
         name: "Initialize template repository"
         runs-on: ubuntu-latest
-        if: github.event.repository.name != 'DatapackTemplate'
+        if: github.event.repository.name != 'template'
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4.1.1
